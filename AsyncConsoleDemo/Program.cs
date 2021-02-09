@@ -15,7 +15,7 @@ namespace AsyncConsoleDemo
             Console.WriteLine("Press Esc to stop...");
             bool yesorno = true;
             await Interupt(yesorno);
-            while (yesorno & amount > 0)
+            while (yesorno && amount > 0)
             {
                 Console.WriteLine(amount);
                 await Task.Delay(1000);
